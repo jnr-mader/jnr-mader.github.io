@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name=“robots” content=“noindex, nofollow”>
+  <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PSRW2G');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    /* Styles go here */
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+    
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%
+    }
+    
+    body {
+      margin: 0
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+      display: block
+    }
+    
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block;
+      vertical-align: baseline
+    }
+    
+    audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+    
+    [hidden],
+    template {
+      display: none
+    }
+    
+    a {
+      background-color: transparent
+    }
+    
+    a:active,
+    a:hover {
+      outline: 0
+    }
+    
+    abbr[title] {
+      border-bottom: 1px dotted
+    }
+    
+    b,
+    strong {
+      font-weight: bold
+    }
+    
+    dfn {
+      font-style: italic
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin: .67em 0
+    }
+    
+    mark {
+      background: #ff0;
+      color: #000
+    }
+    
+    small {
+      font-size: 80%
+    }
+    
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+    
+    sup {
+      top: -0.5em
+    }
+    
+    sub {
+      bottom: -0.25em
+    }
+    
+    img {
+      border: 0
+    }
+    
+    svg:not(:root) {
+      overflow: hidden
+    }
+    
+    figure {
+      margin: 1em 40px
+    }
+    
+    hr {
+      box-sizing: content-box;
+      height: 0
+    }
+    
+    pre {
+      overflow: auto
+    }
+    
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em
+    }
+    
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0
+    }
+    
+    button {
+      overflow: visible
+    }
+    
+    button,
+    select {
+      text-transform: none
+    }
+    
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer
+    }
+    
+    button[disabled],
+    html input[disabled] {
+      cursor: default
+    }
+    
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0
+    }
+    
+    input {
+      line-height: normal
+    }
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      height: auto
+    }
+    
+    input[type="search"] {
+      -webkit-appearance: textfield;
+      box-sizing: content-box
+    }
+    
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+    
+    fieldset {
+      border: 1px solid silver;
+      margin: 0 2px;
+      padding: .35em .625em .75em
+    }
+    
+    legend {
+      border: 0;
+      padding: 0
+    }
+    
+    textarea {
+      overflow: auto
+    }
+    
+    optgroup {
+      font-weight: bold
+    }
+    
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+    
+    td,
+    th {
+      padding: 0
+    }
+    
+    body {
+      margin: 100px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      line-height: 1.4em;
+      background-color: #ccc;
+    }
+    
+    .container {
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 800px;
+      text-align: center;
+      background-color: #fff;
+    }
+    
+    ul li {
+      display: inline-block;
+      width: 10%;
+      list-style: none;
+      text-align: center;
+    }
+    
+    ul img {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    ul a {
+      display: block;
+      text-align: center;
+      font-size: 11px;
+      color: #aaa;
+      text-decoration: none;
+    }
+    
+    article {
+      font-weight: normal;
+      color: #aaa;
+    }
+    
+    article .notice__title {
+      color: #333;
+    }
+    
+    .notice {
+      max-width: 640px;
+      margin: auto;
+      text-align: center;
+    }
+    
+    .notice-content {
+      display: none;
+    }
+    
+    .notice__title {
+      line-height: 1.1em;
+    }
+    
+    .notice-content p {
+      margin: 0;
+    }
+    
+    .notice-summary {
+      cursor: pointer;
+    }
+    
+    .notice-summary i {
+      position: relative;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+    }
+    
+    .notice-summary i:after {
+      left: 0;
+      top: 8px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-left-color: #000;
+      border-width: 5px;
+      margin-top: -5px;
+    }
+    
+    .notice-summary.open i:after {
+      top: 12px;
+      left: 0;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #000;
+      border-width: 5px;
+      margin-left: -5px;
+    }
+    
+    .lang__block {
+      display: none;
+    }
+    
+    .lang__block.current {
+      display: block;
+    }
+    
+    p strong{
+      color: #000;  
+    }
+  </style>
+
+  <script>
+    $(function() {
+      $(".notice-summary").click(function() {
+        $(this).siblings(".notice-content").slideToggle();
+        $(this).toggleClass("open");
+      });
+
+      $("ul a").click(function(e) {
+        e.preventDefault;
+        var flag = $(this).attr("class");
+        $(this).parents(".container").find("#" + flag).addClass("current");
+        $(this).parents(".container").find("#" + flag).siblings(".lang__block").removeClass("current");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSRW2G" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+
+    <header class="documentation__header">
+      <img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/Images/ps_logo_full_trademark_small_web.png" class="documentation__header__logo">
+    </header>
+
+    <ul>
+      <li>
+        <a class="en" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/english-international.png" alt="en">English</a>
+      </li>
+      <li>
+        <a class="zh-cn" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/chinese-simplified.png">简体中文</a>
+      </li>
+      <li>
+        <a class="zh-tw" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/chinese-traditional.png">繁體中文</a>
+      </li>
+      <li>
+        <a class="cs" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/czech.png">Čeština</a>
+      </li>
+      <li>
+        <a class="fi" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/finnish.png">Suomi</a>
+      </li>
+      <li>
+        <a class="fr" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/french.png">Français</a>
+      </li>
+      <li>
+        <a class="de" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/german.png" alt="de">Deutsch</a>
+      </li>
+      <li>
+        <a class="he" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/hebrew.png">עברי)</a>
+      </li>
+      <li>
+        <a class="it" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/italy.png">Italiano</a>
+      </li>
+      <li>
+        <a class="ja" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/japanese.png">日本語</a>
+      </li>
+      <li>
+        <a class="ko" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/korean.png">한국어</a>
+      </li>
+      <li>
+        <a class="no" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/norwegian.png">Norsk</a>
+      </li>
+      <li>
+        <a class="pl" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/poland.png" alt="pl">Polski</a>
+      </li>
+      <li>
+        <a class="pt" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/portuguese.png">Português</a>
+      </li>
+      <li>
+        <a class="ru" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/russian.png" alt="ru">Русский</a>
+      </li>
+      <li>
+        <a class="es" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/spanish.png">Español</a>
+      </li>
+      <li>
+        <a class="sv" href="#"><img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/CountryFlags/swedish.png">Svenska</a>
+      </li>
+    </ul>
+
+    <div id="en" class="lang__block current">
+      <article class="content notice">
+        <h1 class="notice__title title">Planned Maintenance - Site Downtime</h1>
+        <p class="notice__message">
+          Please be aware that due to essential maintenance work our website – desktop and mobile – and App will be unavailable for 8 hours 30 minutes between the following approximate times:-
+        </p>
+        <p> Maintenance Start: 9:30pm*, April 3rd, 2017 </p>
+        <p> Maintenance End: 6:00am*, April 4th, 2017 <p>
+        <p><strong> Individual Service Availability </strong></p>
+        <p> Pinnacle website (including wagering) & API access will be suspended from 9.30pm*, April 3rd, 2017 and will be reactivated by 6am*, April 4th, 2017. </p>
+        <p> Please note that the following key services will only be available four hours after the maintenance has been completed (estimated to be 10am*, April 4th). </p>
+        <p> • Depositing • Withdrawals • Payouts </p>
+        <p> • Grading of wagers • KYC Upload and review </p>
+        <p><strong> Casino Maintenance </strong></p>
+        <p> The Casino will be unavailable for 2 hours before maintenance begins – 7.30pm*, April 3rd and for four hours after it ends – 10am*, April 4th. </p>
+        <p> We apologise for any inconvenience caused but this work is essential to improve our site reliability and speed. For the latest information follow <a href="https://www.twitter.com/PinnacleSports"> our official Twitter account. </a></p>
+        <p> Thank you for your understanding. </p>
+        <p> *Times are in PDT which is UTC -7 hrs. </p>
+        <p> See <a href="https://www.worldtimeserver.com"> www.worldtimeserver.com </a> for conversion to your local time zone </p>
+      </article>
+    </div>
+
+    <div id="zh-cn" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">按计划维护 - 网站关闭</h1>
+        <p class="notice__message">
+          请注意，由于基本的维护工作，我们桌面版和移动版的网站和应用程序大概在以下8个半小时内不 可用
+        </p>
+        <p>维护开始：2017年4月3日晚上9点30分*</p>
+        <p>维护结束：2017年4月4日上午6点*</p>
+        <p><strong>个人服务可用性</strong></p>
+        <p>我們目前正在進行系統維護。在系統維護期間，您將無法使用 Pinnacle（畢諾克）網站。對帶來的不便，我們預先表達歉意。</p>
+        <p>Pinnacle网站（包括投注）和API访问将从2017年4月3日晚上9点30分*开始暂停，并将在2017年 4月4日早上6点*恢复。</p>
+        <p>请注意，在维修完成（预计为4月4日上午10点*）后的四个小时内，将仅提供以下主要服务。</p>
+        <p>• 存款 • 提款 • 派彩</p>
+        <p>• 投注分级 • KYC上传和审查</p>
+        <p><strong>娱乐场维护</strong></p>
+        <p>娱乐场将在维护开始前的2小时，即4月3日晚上7点30分*，到维护结束后的4小时，即4月4日上午 10点*之间不可用。</p>
+        <p>我们为造成的不便深表歉意，但这项工作对提高网站的可靠性和速度至关重要。有关最新信息，请参阅<a href="https://www.twitter.com/PinnacleSports"> 我们的官方Twitter帐户. </a>。</p>
+        <p>感谢您的理解。</p>
+        <p>*时间以比UTC晚7小时的PDT计。</p>
+        <p>请参考 <a href="https://www.worldtimeserver.com"> www.worldtimeserver.com </a> 转换为当地时间</p>
+      </article>
+    </div>
+
+    <div id="zh-tw" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">網站維護公告</h1>
+        <p class="notice__message">
+          排定維護 - 網站停機時間
+        </p>
+        <p>請注意，因為重要的維護工作，您將無法使用我們的網站（電腦版和手機版）和應用程式，為時 8 小時 30 分鐘，時間約為：-</p>
+        <p>維護開始：2017 年 4 月 3 日晚上 9:30*</p>
+        <p>維護結束：2017 年 4 月 4 日早上 6 點*</p>
+        <p><strong>個別服務可用情況</strong></p>
+        <p>Pinnacle（畢諾克）網站（包括投注）以及 API 存取將於 2017 年 4 月 3 日晚上 9:30*暫停，並 於 2017 年 4 月 4 日早上 6 點重新啟用。</p>
+        <p>請注意，維護完成後四個小時（預計於 4 月 4 日早上 10 點*），您才可以使用以下重要服務。</p>
+        <p>• 存款 • 提款 • 派彩</p>
+        <p>• 投注結算 • KYC 上傳和審查</p>
+        <p><strong>娛樂場維護</strong></p>
+        <p>從維護開始前 2 小時（4 月 3 日晚上 7:30），到維護結束後 4 小時（4 月 4 日早上 10 點*），您將無法使用娛樂場。</p>
+        <p>抱歉造成您的不便，但這是改善網站可靠度和速度的重要工作。請追蹤 <a href="https://www.twitter.com/PinnacleSports">我們的官方 Twitter 帳號</a> 以 取得最新資訊。</p>
+        <p>感謝您的諒解。</p>
+        <p>*時間為太平洋時區（世界標準時間 -7 小時）。</p>
+        <p>請參考 <a href="https://www.worldtimeserver.com"> www.worldtimeserver.com </a> 以換算您所在時區的時間</p>
+      </article>
+    </div>
+
+    <div id="cs" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Plánovaná údržba – Odstávka webu</h1>
+        <p class="notice__message">
+          Upozorňujeme, že z důvodu nezbytné údržby budou naše webové stránky – pro počítače i pro mobily – a aplikace nedostupné po dobu 8,5 hodiny, a to přibližně v této době:
+        </p>
+        <p>Začátek údržby: 3. dubna 2017 ve 21:30*</p>
+        <p>Konec údržby: 4. dubna 2017 v 6:00*</p>
+        <p><strong>Dostupnost jednotlivých služeb</strong></p>
+        <p>Webové stránky Pinnacle (plus sázení) a přístup pomocí API budou nedostupné od 21:30* 3. dubna 2017. Jejich provoz bude obnoven do 6:00 hodin 4. dubna 2017.</p>
+        <p>Upozorňujeme, že dostupnost následujících důležitých služeb bude obnovena teprve čtyři hodiny po skončení údržby (odhadujeme, že k tomu dojde v 10:00* hodin dne 4. dubna).</p>
+        <p>• Vklady • Výběry • Výplaty</p>
+        <p>• Vypořádání sázek • Nahrávání a kontrola KYC</p>
+        <p><strong>Údržba kasina</strong></p>
+        <p>Kasino bude mimo provoz již 2 hodiny před začátkem údržby (tedy od 19:30* dne 27. března) a ještě 3 hodiny po skončení údržby (do 10:00* hodin dne 28. března).</p>
+        <p>Omlouváme se za způsobené nepříjemnosti, plánované úkony jsou však nezbytné pro zlepšení spolehlivosti a rychlosti našeho webu. Aktuální informace naleznete na <a href="https://www.twitter.com/PinnacleSports">našem oficiálním twitterovém účtu</a>.</p>
+        <p>Děkujeme za pochopení.</p>
+        <p>* Uvedené časy jsou v pásmu PDT, tedy UTC -7 hodin.</p>
+        <p>Na váš místní čas je můžete převést pomocí webu <a href="https://www.worldtimeserver.com"> www.worldtimeserver.com </a> .</p>
+      </article>
+    </div>
+
+    <div id="fi" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Ylläpitotöitä – sivusto poissa käytöstä</h1>
+        <p class="notice__message">
+          Pyydämme varautumaan siihen, että tärkeiden ylläpitotöiden vuoksi sivustomme – sekä pöytäkone- että mobiiliversio – ja sovellus ovat poissa käytöstä 8 tunnin ja 30 minuutin ajan seuraavien likimääräisten aikojen välillä:
+        </p>
+        <p>Ylläpitotyöt alkavat 3. huhtikuuta 2017 klo 21:30*</p>
+        <p>Ylläpitotyöt päättyvät 4. huhtikuuta 2017 klo 6:00*</p>
+        <p><strong>Yksittäisen palvelun käytettävyys</strong></p>
+        <p>Pinnaclen sivusto (mukaan lukien vedonlyönti) ja API-käyttö poistetaan käytöstä kello 21.30* 3. huhtikuuta 2017 ja tulevat uudelleen käyttöön klo 6:00 4. huhtikuuta 2017.</p>
+        <p>Huomaa, että seuraavat tärkeät palvelut ovat käytettävissä vasta neljän tunnin kuluttua ylläpitotöiden päättymisestä (arviolta klo 10:00* 4. huhtikuuta).</p>
+        <p>• Talletukset • Nostot • Voittojen maksu</p>
+        <p>• Vetojen ratkaiseminen • KYC-lataus ja -arviointi</p>
+        <p><strong>Kasinon ylläpito</strong></p>
+        <p>Kasino poistuu käytöstä kaksi tuntia ennen ylläpitotöiden aloittamista (3. huhtikuuta klo 19:30*) ja palaa käyttöön neljä tuntia niiden päättymisen jälkeen (4. huhtikuuta klo 10:00*).</p>
+        <p>Pahoittelemme tästä mahdollisesti aiheutuvaa haittaa. Nämä työt ovat kuitenkin välttämättömiä sivuston luotettavuuden ja nopeuden kannalta. Uusimmat tiedot saat seuraamalla <a href="https://www.twitter.com/PinnacleSports">virallista Twitter-tiliämme</a>.</p>
+        <p>Kiitos ymmärryksestäsi.</p>
+        <p>*Ajat ovat PDT-aikavyöhykkeen mukaisia eli UTC -7.</p>
+        <p>Osoitteessa <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> on työkalu, jolla voit muuntaa ajat oman aikavyöhykkeesi mukaisiksi.</p>
+      </article>
+    </div>
+
+    <div id="fr" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Maintenance périodique - Indisponibilité du site</h1>
+        <p class="notice__message">
+          Nous vous informons que, en raison de travaux de maintenance indispensables, notre site (PC et mobile) et notre application seront indisponibles pendant 8 heures et 30 minutes, approximativement entre les horaires suivants :-
+        </p>
+        <p>Début de la maintenance : le 3 avril 2017 à 21 h 30*</p>
+        <p>Fin de la maintenance : le 4 avril 2017 à 6 h*</p>
+        <p><strong>Disponibilité de chaque service</strong></p>
+        <p>L'accès au site Internet Pinnacle (y compris aux paris) et à l'API sera suspendu à partir du 3 avril 2017 à 21 h 30* et sera réactivé le 4 avril 2017 à 6 h.</p>
+        <p>Important : Les services clés suivants ne seront disponibles que quatre heures après la fin de la maintenance (soit aux alentours de 10 h* le 4 avril).</p>
+        <p>• Dépôts • Retraits • Gains</p>
+        <p>• Résolution des paris • Chargement et validation KYC</p>
+        <p><strong>Maintenance du casino</strong></p>
+        <p>Le Casino sera indisponible deux heures avant le début de la maintenance (à 19 h 30 le 3 avril) et quatre heures après la fin de la maintenance (soit à 10 h* le 4 avril).</p>
+        <p>Veuillez nous excuser pour la gêne occasionnée. Ce travail est essentiel à l'amélioration de la fiabilité et de la rapidité de notre site. Pour être informé au fur et à mesure, suivez <a href="https://www.twitter.com/PinnacleSports">notre compte Twitter officiel</a>.</p>
+        <p>Nous vous remercions pour votre compréhension.</p>
+        <p>* Heure du Pacifique, soit UTC-7.</p>
+        <p>Consultez le site <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> pour convertir les horaires dans votre fuseau horaire.</p>
+      </article>
+    </div>
+
+    <div id="de" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Geplante Wartungsarbeiten – Website nicht verfügbar</h1>
+        <p class="notice__message">
+          Beachten Sie, dass aufgrund dringend erforderlicher Wartungsarbeiten unsere Website – Desktop und mobil – und unsere App während der folgenden Zeiten für 8 Stunden und 30 Minuten nicht verfügbar sein werden:
+        </p>
+        <p>Wartungsbeginn: 21:30 Uhr* am 3. April 2017</p>
+        <p>Wartungsende: 06:00 Uhr* am 4. April 2017</p>
+        <p><strong>Verfügbarkeit einzelner Services</strong></p>
+        <p>Die Pinnacle-Website (einschließlich Wetten) sowie der API-Zugang sind ab 21:30 Uhr*, 03. April 2017 nicht mehr verfügbar und werden um 6:00 Uhr am 04. April 2017 wieder aktiviert.</p>
+        <p>Beachten Sie, dass die folgenden wichtigen Services erst wieder vier Stunden nach Ende der Wartungsarbeiten verfügbar sein werden, also ab ca. 10:00 Uhr* am04. April.</p>
+        <p>• Einzahlungen • Auszahlungen • Auszahlungen</p>
+        <p>• Auswertung von Wetten • KYC-Upload und -Prüfung</p>
+        <p><strong>Casino-Wartungsarbeiten</strong></p>
+        <p>Das Casino ist in folgendem Zeitraum nicht verfügbar: 2 Stunden vor Wartungsbeginn – 19:30 Uhr am 03. April bis 3 Stunden nach Wartungsende - 10:00 Uhr* am 04. April.</p>
+        <p>Wir entschuldigen uns für die Unannehmlichkeiten. Die arbeiten sind unerlässlich für die Verbesserung der Zuverlässigkeit und Geschwindigkeit unserer Website. Die aktuellsten Informationen finden Sie auf unserem <a href="https://www.twitter.com/PinnacleSports">offiziellen Twitter-Konto</a>.</p>
+        <p>Vielen Dank für Ihr Verständnis.</p>
+        <p>*Sämtliche Uhrzeiten sind in PDT angegeben, was UTC -7 Stunden entspricht.</p>
+        <p>Informationen zur Umrechnung in Ihre Zeitzone finden Sie unter <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a></p>
+      </article>
+    </div>
+
+    <div id="he" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Planned Maintenance - Site Downtime</h1>
+        <p class="notice__message">
+          Please be aware that due to essential maintenance work our website – desktop and mobile – and App will be unavailable for 8 hours 30 minutes between the following approximate times:-
+        </p>
+        <p> Maintenance Start: 9:30pm*, April 3rd, 2017 </p>
+        <p> Maintenance End: 6:00am*, April 4th, 2017 <p>
+        <p><strong> Individual Service Availability </strong></p>
+        <p> Pinnacle website (including wagering) & API access will be suspended from 9.30pm*, April 3rd, 2017 and will be reactivated by 6am*, April 4th, 2017. </p>
+        <p> Please note that the following key services will only be available four hours after the maintenance has been completed (estimated to be 10am*, April 4th). </p>
+        <p> • Depositing • Withdrawals • Payouts </p>
+        <p> • Grading of wagers • KYC Upload and review </p>
+        <p><strong> Casino Maintenance </strong></p>
+        <p> The Casino will be unavailable for 2 hours before maintenance begins – 7.30pm*, April 3rd and for four hours after it ends – 10am*, April 4th. </p>
+        <p> We apologise for any inconvenience caused but this work is essential to improve our site reliability and speed. For the latest information follow <a href="https://www.twitter.com/PinnacleSports"> our official Twitter account. </a></p>
+        <p> Thank you for your understanding. </p>
+        <p> *Times are in PDT which is UTC -7 hrs. </p>
+        <p> See <a href="https://www.worldtimeserver.com"> www.worldtimeserver.com </a> for conversion to your local time zone </p>
+      </article>
+    </div>
+
+    <div id="it" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Manutenzione pianificata - Il sito è offline</h1>
+        <p class="notice__message">
+          ti informiamo che a causa di lavori di manutenzione essenzialiil nostro sito Web, versione desktop e mobile, e l'app non saranno disponibili per 8 ore e 30 minuti tra le seguenti fasce orarie:
+        </p>
+        <p>Inizio manutenzione: 21:30* del 3 aprile 2017</p>
+        <p>Fine manutenzione: 6:00 del 4 aprile 2017</p>
+        <p><strong>Disponibilità dei singoli servizi</strong></p>
+        <p>Il sito Web di Pinnacle (incluse le scommesse) e l'accesso all'API saranno sospesi dalle ore 21:30del 3 aprile 2017 e saranno riattivati entro le ore 6:00 del 4 aprile 2017.</p>
+        <p>Nota: i seguenti servizi principali saranno disponibili solamente quattro ore dopo che la manutenzione sarà completata (orario stimato:10:00 del 4 aprile).</p>
+        <p>• Depositi • Prelievi • Pagamenti</p>
+        <p>• Valutazione delle scommesse • KYC Upload e controllo</p>
+        <p><strong>Manutenzione del Casinò</strong></p>
+        <p>Il Casinò non sarà disponibile per le 2 ore precedenti all'inizio della manutenzione, dalle ore 19:30 del 3 aprile e per le quattro ore successive, alle ore 10:00 del 4 aprile.</p>
+        <p>Ci scusiamo per qualsiasi disagio causato, ma questo lavoro è essenziale per migliorare l'affidabilità e la velocità del nostro sito. Per rimanere aggiornato segui <a href="https://www.twitter.com/PinnacleSports">il nostro account ufficiale di Twitter</a>.</p>
+        <p>Grazie per la comprensione.</p>
+        <p>*Gli orari si riferiscono al fuso orario dell'America settentrionale affacciata sul Pacifico, che è 7 ore indietro rispetto al fuso orario UTC.</p>
+        <p>Visita <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> per una conversione nel tuo fuso orario locale</p>
+      </article>
+    </div>
+
+    <div id="ja" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">定期メンテナンス - サイトのダウンタイム</h1>
+        <p class="notice__message">
+          基本のメンテナンス作業のため、当社のウェブサイト（デスクトップ、モバイル）およびアプ リは、次の時間帯、約8時間30分にわたってご利用いただけなくなります。-
+        </p>
+        <p>メンテナンス開始： 2017年4月3日午後8時30分*</p>
+        <p>メンテナンス終了： 2017年4月4日午前6時0分*</p>
+        <p><strong>各サービスの利用可能時間</strong></p>
+        <p>Pinnacleのウェブサイト（および賭け）とAPIアクセスは、2017年4月3日午後9時30分*に停止 され、2017年4月4日午前6時*に再開される予定です。</p>
+        <p>次の主要なサービスのみ、メンテナンス完了時から4時間後（4月4日午前10時*を予定)に使用で きるようになります。</p>
+        <p>• 入金 • 引き出し • 払い戻し</p>
+        <p>• 賭け金の決定 • KYCのアップロードと確認</p>
+        <p><strong>カジノのメンテナンス</strong></p>
+        <p>カジノはメンテナンス開始の2時間前の4月3日午後7時30分から、終了の4時間後の4月4日午前 10時*まで、ご利用いただけなくなります。</p>
+        <p>ご不便をおかけしまして申し訳ございません。このメンテナンス作業は、当社のサイトの信頼 性とスピードを向上させるために必要です。最新情報については、 <a href="https://www.twitter.com/PinnacleSports">当社の公式Twitterアカウン ト</a> をフォローしてください。</p>
+        <p>ご理解のほど、よろしくお願いいたします。</p>
+        <p>*時刻は太平洋夏時間（PDT）です。協定世界時（UTC）の場合は7時間前となります。</p>
+        <p>ローカルタイムゾーンへの変換については、 <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> をご覧ください。</p>
+      </article>
+    </div>
+
+    <div id="ko" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">정기 점검 - 사이트 중단 시간</h1>
+        <p class="notice__message">
+          저희는 현재 시스템 점검을 수행 중입니다. 이 기간에는 피나클을 사용하실 수 없습니다. 이런 불편을 끼쳐드려 대단히 죄송합니다.
+        </p>
+        <p>필수 점검 작업으로 인해 웹사이트(데스크톱 및 모바일)와 앱이 다음 예상 시간 내 8시간 30분 동안 사용 불가능합니다:-</p>
+        <p>점검 시작: 2017년 4월 3일 오후 9시 30분*</p>
+        <p>점검 종료: 2017년 4월 4일 오전 6시*</p>
+        <p><strong>개별 서비스 이용 가능 여부</strong></p>
+        <p>피나클 웹사이트(베팅 금액 포함) 및 API 액세스는 2017년 4월 3일 오전 9시 30분*부터 정지되며 2017년 4월 4일 오전 6시*부터 재개됩니다.</p>
+        <p>다음의 주요 서비스는 점검이 완료되고 4시간 뒤에 사용 가능합니다(4월 4일 오전 10시* 예정).</p>
+        <p>• 입금하기 • 출금하기 • 상금 지급</p>
+        <p>• 베팅 결과 확정 • KYC 업로드 및 리뷰</p>
+        <p><strong>카지노 점검</strong></p>
+        <p>카지노는 점검 시작인 4월 3일 오후 7시 30분*부터 2시간, 점검 종료인 4월 4일 오전 10시*부터 4시간 동안은 이용할 수 없습니다.</p>
+        <p>불편함을 끼쳐 죄송하지만, 이 작업은 당사 사이트의 신뢰성과 속도 개선을 위해 필수입니다. <a href="https://www.twitter.com/PinnacleSports">저희 공식 Twitter 계정</a> 을 팔로우하여 최신 정보를 받아보세요.</p>
+        <p>이해해 주셔서 감사합니다.</p>
+        <p>*시간은 PDT 기준, UTC -7 시간대입니다.</p>
+        <p><a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> 에서 귀하의 지역에 맞게 시간대를 전환할 수 있습니다.</p>
+      </article>
+    </div>
+
+    <div id="no" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Planlagt vedlikehold – Nedetid for nettstedet</h1>
+        <p class="notice__message">
+          Vi skal utføre planlagt vedlikehold, noe som gjør at nettstedet vårt (både for stasjonære og mobile enheter) og appen vil være utilgjengelig i 8 timer og 30 minutter mellom følgende anslåtte tidspunkter:
+        </p>
+        <p>Start av vedlikehold: kl. 21:30* den 3. april 2017</p>
+        <p>Slutt på vedlikehold: kl. 06:00* den 4. april 2017</p>
+        <p><strong>Informasjon om enkelttjenester</strong></p>
+        <p>Pinnacles nettsider (inkludert plassering av innsatser) og API-tilgang blir deaktivert kl. 21:30* den 3. april 2017 og aktiveres igjen kl. 06:00 den 4. april 2017.</p>
+        <p>Vær oppmerksom på at følgende viktige tjenester kun blir tilgjengelige igjen fire timer etter at vedlikeholdet er fullført (foreløpig anslag er kl. 10:00* den 4. april).</p>
+        <p>• Innskudd • Uttak • Utbetalinger</p>
+        <p>• Klassifisering av veddemål • KYC-opplasting og -evaluering</p>
+        <p><strong>Kasino-vedlikehold</strong></p>
+        <p>Kasinoet vil være utligjengelig fra to timer før vedlikeholdet starter – kl. 19:30 den 3. april – og i fire timer etter at det er avsluttet – til kl. 10:00* den 4. april.</p>
+        <p>Vi beklager eventuelle ulemper dette kan medføre, men arbeidet er dessverre kritisk viktig for å forbedre påliteligheten og hastigheten til nettsidene våre. Følg <a href="https://www.twitter.com/PinnacleSports">vår offisielle Twitter-konto</a> for oppdatert informasjon.</p>
+        <p><strong>Takk for tålmodigheten.</strong></p>
+        <p>*Tidene som oppgis er i tidssonen PDT, som er UTC -7 timer.</p>
+        <p>Se <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> for konvertering til din lokale tidssone</p>
+      </article>
+    </div>
+
+    <div id="pl" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Planowana konserwacja — wyłączenie serwisu</h1>
+        <p class="notice__message">
+          Ze względu na prace konserwacyjne nasza witryna (zarówno w wersji na komputer, jak i urządzenia mobilne) oraz aplikacja będą niedostępne przez 8,5 godziny:
+        </p>
+        <p>Rozpoczęcie prac konserwacyjnych: 3 kwietnia 2017 godz. 21:30*</p>
+        <p>Zakończenie prac konserwacyjnych: 4 kwietnia 2017 godz. 6:00*</p>
+        <p><strong>Dostępność poszczególnych usług</strong></p>
+        <p>Dostęp do witryny Pinnacle (w tym zakładów) oraz API zostanie zawieszony od 21:30* w dniu 3 kwietnia 2017 i zostanie przywrócony do godziny 6:00 w dniu 4 kwietnia 2017.</p>
+        <p>Prosimy o zwrócenie uwagi, że poniższe usługi staną się dostępne cztery godziny po zakończeniu prac konserwacyjnych (ok. godziny 10:00 w dniu 4 kwietnia).</p>
+        <p>• Wpłaty • Wypłaty z konta • Wypłacanie wygranych</p>
+        <p>• Rozliczanie zakładów • Ważne informacje dla klientów</p>
+        <p><strong>Prace konserwacyjne dotyczące kasyna</strong></p>
+        <p>Kasyno będzie niedostępne przez 2 godziny przed rozpoczęciem prac konserwacyjnych oraz przez 3 godziny po zakończeniu prac przewidzianych do wykonania pomiędzy 19:30 w dniu 3 kwietnia i 10:00 w dniu 4 kwietnia.</p>
+        <p>Przepraszamy za związane z tym niedogodności. Prace mają kluczowe znaczenia dla podniesienia poprawności działania oraz szybkości pracy witryny. Aby mieć dostęp do najnowszych informacji śledź <a href="https://www.twitter.com/PinnacleSports">nasze oficjalne konto na Twitterze</a>.</p>
+        <p>Dziękujemy za zrozumienie.</p>
+        <p>*Podane godziny dotyczą letniego czasu pacyficznego (różnica między czasem polskim to -8 godzin).</p>
+        <p>Przejdź na stronę <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a>, aby przeliczyć godziny na swój czas lokalny.</p>
+      </article>
+    </div>
+
+    <div id="pt" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Manutenção planeada - Indisponibilidade do website</h1>
+        <p class="notice__message">
+          Note que, devido a trabalhos de manutenção essenciais, o nosso website – em computadores e dispositivos móveis – e a aplicação estarão indisponíveis durante 8 horas e 30 minutos entre os seguintes horários aproximados: -
+        </p>
+        <p>Início da manutenção: 21:30* do dia 3 de abril de 2017</p>
+        <p>Fim da manutenção: 6:00* do dia 4 de abril de 2017</p>
+        <p><strong>Disponibilidade do serviço individual</strong></p>
+        <p>O website da Pinnacle (mais apostas) e o acesso à API estarão suspensos das 21:30* do dia 3 de abril de 2017 e serão reativados por volta das 6:00* do dia 4 de abril de 2017.</p>
+        <p>Note que os seguintes serviços fundamentais só estarão disponíveis quatro horas depois de a manutenção ter sido concluída (previsão: 10:00* do dia 4 de abril).</p>
+        <p>• Depósitos • Levantamentos • Retornos</p>
+        <p>• Classificação das apostas • Carregamento e análise KYC</p>
+        <p><strong>Manutenção do Casino</strong></p>
+        <p>O Casino estará indisponível durante 2 horas antes do início da manutenção – 19:30* de 3 de abril e durante quatro horas depois do seu fim – 10:00* de 4 de abril.</p>
+        <p>Pedimos desculpa por qualquer inconveniente que tal venha a causar, mas estes trabalhos são essenciais para melhorar a rapidez e a fiabilidade do nosso website. Para receber as informações mais atualizadas, siga <a href="https://www.twitter.com/PinnacleSports">a nossa conta oficial no Twitter</a>.</p>
+        <p>Obrigado pela sua compreensão.</p>
+        <p>*Os horários apresentados estão de acordo com o fuso horário do Pacífico (PDT), ou seja, UTC/GMT -7 horas.</p>
+        <p>Consulte <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> para converter para o seu fuso horário local.</p>
+      </article>
+    </div>
+
+    <div id="ru" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Запланированное техническое обслуживание – простой веб-сайта</h1>
+        <p class="notice__message">
+          В данный момент проводится техническое обслуживание системы. В течение этого времени вы не сможете воспользоваться услугами Пиннакл. Заранее приносим извинения за любые причиненные в этой связи неудобства.
+        </p>
+        <p>Обращаем ваше внимание на то, что в связи с проведением работ по техническому обслуживанию наш веб-сайт – его версия для настольного ПК и мобильная версия – и приложение не будут работать на протяжении приблизительно 8 ч 30 мин в указанное далее время.</p>
+        <p>Начало технического обслуживания: 21:30* 3 апреля 2017 г.</p>
+        <p>Завершение технического обслуживания: 06:00* 4 апреля 2017 г.</p>
+        <p><strong>Доступность отдельных услуг</strong></p>
+        <p>Доступ к сайту Пиннакл (а также к размещению ставок) и к интерфейсу прикладного программирования будет закрыт с 21:30* 3 апреля 2017 г. до 6:00* 4 апреля 2017 г.</p>
+        <p>Обратите внимание на то, что перечисленные далее основные услуги будут доступны только через четыре часа после завершения технического обслуживания (предположительно в 10:00* 4 апреля).</p>
+        <p>• Внесение средств на счет. • Вывод средств. • Выплаты.</p>
+        <p>• Классификация ставок. • Загрузка и обзор данных KYC.</p>
+        <p><strong>Техническое обслуживание казино</strong></p>
+        <p>Казино будет закрыто в течение двух часов до начала технического обслуживания (19:30* 3 апреля) и в течение четырех часов после его завершения (10:00* 4 апреля).</p>
+        <p>Приносим извинения за причиняемые неудобства, но выполнение этой операции необходимо для повышения надежности и скорости работы веб-сайта. Следите за обновлением информации на <a href="https://www.twitter.com/PinnacleSports">нашей официальной странице в Twitter</a>.</p>
+        <p>Благодарим за понимание.</p>
+        <p>*Время указано по тихоокеанскому летнему времени, что соответствует UTC -7 по всемирному координированному времени.</p>
+        <p>Для перевода времени в соответствии с местным часовым поясом см. <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a>.</p>
+      </article>
+    </div>
+
+    <div id="es" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Mantenimiento programado - Sitio inactivo</h1>
+        <p class="notice__message">
+          En estos momentos estamos llevando a cabo tareas de mantenimiento del sistema. Pinnacle no estará disponible hasta su finalización. Pedimos disculpas de antemano por las molestias que esto pueda ocasionar.
+        </p>
+        <p>Ten en cuenta que debido a labores esenciales de mantenimiento, nuestro sitio web, en las versiones de escritorio y móvil, y nuestra aplicación no estarán disponibles durante 8 horas y media en el siguiente horario aproximado:-</p>
+        <p>Inicio del mantenimiento: 9:30 PM* del 3 de abril de 2017</p>
+        <p>Finalización del mantenimiento: 6:00 AM* del 4 de abril de 2017</p>
+        <p><strong>Disponibilidad del servicio individual</strong></p>
+        <p>El acceso al sitio web de Pinnacle (incluyendo las apuestas) y a la API se suspenderá a partir de las 9:30 PM* del 3 de abril de 2017 y se reactivará a las 6:00 AM* del 4 de abril de 2017.</p>
+        <p>Ten en cuenta que los siguientes servicios clave solo estarán disponibles cuatro horas después de que el mantenimiento se haya completado (se calcula que será a las 10:00 AM* del 4 de abril).</p>
+        <p>• Ingresos • Reintegros • Ganancias</p>
+        <p>• Evaluación de apuestas • Carga y revisión KYC</p>
+        <p><strong>Mantenimiento del Casino</strong></p>
+        <p>El Casino no estará disponible desde dos horas antes de que comience el mantenimiento, 7:30 PM* del 3 de abril, y hasta cuatro horas después de que finalice, 10:00 AM* del 4 de abril.</p>
+        <p>Lamentamos las molestias causadas pero estas labores son esenciales para mejorar la fiabilidad y velocidad de nuestro sitio. Para conocer la información más reciente, sigue <a href="https://www.twitter.com/PinnacleSports">nuestra cuenta oficial de Twitter</a>.</p>
+        <p>Gracias por tu comprensión.</p>
+        <p>*Las horas son PDT, es decir, UTC -7 horas.</p>
+        <p>Consulta <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> para convertirlas a tu franja horaria local</p>
+      </article>
+    </div>
+
+    <div id="sv" class="lang__block">
+      <article class="content notice">
+        <h1 class="notice__title title">Planerat underhåll – webbplatsen släcks temporärt</h1>
+        <p class="notice__message">
+          På grund av nödvändigt underhållsarbete kommer både dator- och mobilversionen av vår webbplats samt vår app att ligga nere i 8 timmar och 30 minuter mellan följande ungefärliga tidpunkter:
+        </p>
+        <p>Underhållet börjar: kl. 21:30* den 3 april 2017.</p>
+        <p>Underhållet slutar: kl. 06:00 den 4 april 2017.</p>
+        <p><strong>Enskilda tjänsters tillgänglighet</strong></p>
+        <p>Pinnacles webbplats (inklusive spelande) & API-tillgång kommer inte att vara tillgängliga mellan kl. 21:30* den 3 april 2017 och kl. 06:00 den 4 april 2017.</p>
+        <p>Följande nyckeltjänster blir tillgängliga först fyra timmar efter att underhållet slutförts (kl. 10:00* den 4 april om allt går som planerat).</p>
+        <p>• Insättning • Uttag • Utbetalningar</p>
+        <p>• Rättning av spel • KYC-uppladdning och granskning</p>
+        <p><strong>Casinounderhåll</strong></p>
+        <p>Casinot kommer att ligga nere från och med 2 timmar innan underhållet börjar – kl. 19:30 den 3 april fram till fyra timmar efter att det avslutats – kl. 10:00* den 4 april.</p>
+        <p>Vi ber om ursäkt för eventuella olägenheter som detta kan medföra och vädjar om förståelse för att detta arbete är nödvändigt för att förbättra webbplatsens tillförlitlighet och hastighet. För att få den senaste informationen kan du följa <a href="https://www.twitter.com/PinnacleSports">vårt officiella Twitter-konto</a>.</p>
+        <p>Tack för din förståelse.</p>
+        <p>*Tiderna anges i PDT som motsvarar UTC -7 timmar.</p>
+        <p>Besök <a href="https://www.worldtimeserver.com">www.worldtimeserver.com</a> för att konvertera till din lokala tidszon</p>
+      </article>
+    </div>
+
+  </div>
+</body>
+
+</html>
